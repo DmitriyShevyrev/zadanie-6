@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="marafet.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Добавление логотипа и ссылок -->
+            <h1>Составьте заказ</h1>
+            <nav>
+                <a href="#home">Главная</a> |
+                <a href="#about">О нас</a> |
+                <a href="#contact">Контакты</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="calculator">
+                <h2>Калькулятор стоимости заказа</h2>
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                
+                <h2>Выберите тип услуги:</h2>
+                <div>
+                    <label class="radio-label">
+                        <input type="radio" name="serviceType" value="type1" checked>
+                        <a href="https://www.wildberries.ru/catalog/212815524/detail.aspx?size=340193786"> Футболка-поло (912 руб) </a>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="serviceType" value="type2">
+                        <a href="https://www.wildberries.ru/catalog/206264519/detail.aspx?size=331317385"> Брюки широкие прямые (2773 руб) </a>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="serviceType" value="type3">
+                        <a href="https://www.wildberries.ru/catalog/180387095/detail.aspx?size=298146603"> Ботинки челси (4931 руб) </a>
+                    </label>
+                </div>
+
+                <div id="options" style="display: none;">
+                    <label for="optionSelect">Дополнительно:</label>
+                    <select id="optionSelect">
+                        <option value="0">L (+0 руб)</option>
+                        <option value="100">XL (+100 руб)</option>
+                        <option value="250">XL (+250 руб)</option>
+                    </select>
+                </div>
+
+                <div id="property" style="display: none;">
+                    <label>
+                        <input type="checkbox" id="propertyCheckbox">
+                        Оставить чаевые (+500 руб)
+                    </label>
+                </div>
+
+                <div id="result">Итоговая стоимость: 0 руб.</div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="my_footer">
+                <p>© 2024 Все права защищены</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
